@@ -288,6 +288,10 @@
 		36E9CD001DD6EEF5003597CE /* QueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */; };
 		36E9CD041DD6F0DE003597CE /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; };
 		36E9CD051DD6F0DE003597CE /* Resolver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D2F397C26C1114E0075373F /* SOCKS5AuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F397B26C1114E0075373F /* SOCKS5AuthAdapter.swift */; };
+		4D2F397D26C1114E0075373F /* SOCKS5AuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F397B26C1114E0075373F /* SOCKS5AuthAdapter.swift */; };
+		4D2F397F26C111DE0075373F /* SOCKS5AuthAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F397E26C111DE0075373F /* SOCKS5AuthAdapterFactory.swift */; };
+		4D2F398026C111DE0075373F /* SOCKS5AuthAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F397E26C111DE0075373F /* SOCKS5AuthAdapterFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -555,6 +559,8 @@
 		36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressSpec.swift; sourceTree = "<group>"; };
 		36E44A011CF2ED4800185DBF /* TUNInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUNInterface.swift; sourceTree = "<group>"; };
 		36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueFactory.swift; path = Tunnel/QueueFactory.swift; sourceTree = "<group>"; };
+		4D2F397B26C1114E0075373F /* SOCKS5AuthAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOCKS5AuthAdapter.swift; sourceTree = "<group>"; };
+		4D2F397E26C111DE0075373F /* SOCKS5AuthAdapterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOCKS5AuthAdapterFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -905,6 +911,7 @@
 				366EB5AC1CDE0FCE00E0E942 /* HTTPAdapter.swift */,
 				368CBDA51D7911FA003CEA62 /* RejectAdapter.swift */,
 				3623479F1D824E4300A047DE /* SOCKS5Adapter.swift */,
+				4D2F397B26C1114E0075373F /* SOCKS5AuthAdapter.swift */,
 				366EB5AD1CDE0FCE00E0E942 /* SecureHTTPAdapter.swift */,
 				366EB5C21CDF375B00E0E942 /* SpeedAdapter.swift */,
 			);
@@ -920,6 +927,7 @@
 				366EB5B31CDE150C00E0E942 /* HTTPAdapterFactory.swift */,
 				368CBDA21D7911D4003CEA62 /* RejectAdapterFactory.swift */,
 				362347A21D82525200A047DE /* SOCKS5AdapterFactory.swift */,
+				4D2F397E26C111DE0075373F /* SOCKS5AuthAdapterFactory.swift */,
 				366EB5B41CDE150C00E0E942 /* SecureHTTPAdapterFactory.swift */,
 				366EB5B51CDE150C00E0E942 /* ServerAdapterFactory.swift */,
 				3664F0B71CE1B814008BA6D8 /* ShadowsocksAdapterFactory.swift */,
@@ -1429,6 +1437,7 @@
 				3636DA5E1CE87C08007F9787 /* IPAddress.swift in Sources */,
 				36411A551D12C123005F4108 /* Atomic.swift in Sources */,
 				36DB3CE41E0BCB1600D907DB /* UInt128.swift in Sources */,
+				4D2F397F26C111DE0075373F /* SOCKS5AuthAdapterFactory.swift in Sources */,
 				36D4007D1E07E48B00583102 /* HTTPURL.swift in Sources */,
 				36C63DCE1CFD70C100A00CA2 /* DNSServer.swift in Sources */,
 				3636DA621CE892EF007F9787 /* Port.swift in Sources */,
@@ -1438,6 +1447,7 @@
 				36B162251CDDA0EA00F24C97 /* AdapterSocket.swift in Sources */,
 				366EB5C01CDE32CD00E0E942 /* Configuration.swift in Sources */,
 				3650FAE51D27BA5300444E79 /* SodiumStreamCrypto.swift in Sources */,
+				4D2F397C26C1114E0075373F /* SOCKS5AuthAdapter.swift in Sources */,
 				36411A801D214D32005F4108 /* PacketProtocolParser.swift in Sources */,
 				36B8936E1E17F97600881890 /* ResponseGenerator.swift in Sources */,
 				366EB5B91CDE150C00E0E942 /* ServerAdapterFactory.swift in Sources */,
@@ -1546,6 +1556,7 @@
 				36C48D651CF88EBC0071804F /* AdapterFactoryParser.swift in Sources */,
 				36411A561D12C123005F4108 /* Atomic.swift in Sources */,
 				36DB3CE51E0BCB1600D907DB /* UInt128.swift in Sources */,
+				4D2F398026C111DE0075373F /* SOCKS5AuthAdapterFactory.swift in Sources */,
 				36D4007E1E07E48B00583102 /* HTTPURL.swift in Sources */,
 				36C63DCF1CFD70C100A00CA2 /* DNSServer.swift in Sources */,
 				36C48D7B1CF88EDA0071804F /* Rule.swift in Sources */,
@@ -1555,6 +1566,7 @@
 				36C48D741CF88ED40071804F /* NWTCPSocket.swift in Sources */,
 				36C48D5A1CF88EB60071804F /* HTTPAdapterFactory.swift in Sources */,
 				3650FAE61D27BA5300444E79 /* SodiumStreamCrypto.swift in Sources */,
+				4D2F397D26C1114E0075373F /* SOCKS5AuthAdapter.swift in Sources */,
 				36411A811D214D32005F4108 /* PacketProtocolParser.swift in Sources */,
 				36B8936F1E17F97600881890 /* ResponseGenerator.swift in Sources */,
 				36C48D571CF88EB60071804F /* AdapterFactory.swift in Sources */,
